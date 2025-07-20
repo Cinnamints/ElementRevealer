@@ -1,3 +1,5 @@
+THIS ENTIRE THING, INCLUDING THE README, WAS VIBECODED OUT OF BOREDOM.
+
 # 🔍 Zen Element Revealer v3.0
 
 > **Professional Chrome Extension for Discovering and Revealing Hidden Interactive Elements**

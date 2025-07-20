@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Element Revealer - Professional Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="zen-window">
+    <div class="zen-window-container">
+        <header class="zen-window-header">
+            <div class="zen-header-top">
+                <div class="zen-logo-section">
+                    <div class="zen-logo-icon">🔍</div>
+                    <div class="zen-title-section">
+                        <h1>Zen Element Revealer</h1>
+                        <div class="zen-subtitle">Professional Dashboard</div>
+                    </div>
+                </div>
+                
+                <div class="zen-controls">
+                    <button class="zen-btn zen-btn-icon-only" id="refreshHookBtn" title="Refresh Hook">
+                        🔄
+                    </button>
+                    <button class="zen-btn zen-btn-icon-only" id="switchTabBtn" title="Switch Tab">
+                        📑
+                    </button>
+                </div>
+            </div>
+            
+            <div class="zen-tab-info" id="tabInfo">
+                <div class="zen-tab-favicon" id="tabFavicon">🌐</div>
+                <div class="zen-tab-details">
+                    <div class="zen-tab-title" id="tabTitle">Loading...</div>
+                    <div class="zen-tab-url" id="tabUrl">Connecting to tab...</div>
+                </div>
+                <div class="zen-tab-status" id="tabStatus">
+                    <div class="zen-status-dot"></div>
+                    <span>Connected</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="zen-window-main">
+            <div class="zen-discovery-section">
+                <div class="zen-discovery-header">
+                    <h2>Element Discovery</h2>
+                    <button class="zen-btn zen-btn-primary" id="discoverBtn">
+                        <span class="zen-btn-icon">🔍</span>
+                        Discover Elements
+                    </button>
+                </div>
+                
+                <div class="zen-discovery-status" id="discoveryStatus">
+                    <div class="zen-status-indicator">
+                        <div class="zen-status-icon">⏳</div>
+                        <div class="zen-status-text">Ready to discover hidden elements</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zen-results-section" id="resultsSection" style="display: none;">
+                <div class="zen-results-header">
+                    <h3>Discovery Results</h3>
+                    <div class="zen-global-actions">
+                        <button class="zen-btn zen-btn-success zen-btn-sm" id="revealAllBtn">
+                            <span class="zen-btn-icon">✨</span>
+                            Reveal All
+                        </button>
+                        <button class="zen-btn zen-btn-warning zen-btn-sm" id="restoreAllBtn">
+                            <span class="zen-btn-icon">🔄</span>
+                            Restore All
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="zen-summary-stats" id="summaryStats">
+                    <!-- Populated by JS -->
+                </div>
+                
+                <div class="zen-category-filters" id="categoryFilters">
+                    <!-- Populated by JS -->
+                </div>
+                
+                <div class="zen-elements-list" id="elementsList">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="zen-window-footer">
+            <div class="zen-footer-stats" id="footerStats">
+                Ready • 0 discovered • 0 revealed
+            </div>
+            <div class="zen-footer-version">
+                Zen v3.0 Professional
+            </div>
+        </footer>
+    </div>
+
+    <script src="window.js"></script>
+</body>
+</html>

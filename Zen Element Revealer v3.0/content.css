@@ -1,0 +1,69 @@
+/* Zen Element Revealer - Content Styles */
+
+.zen-highlight {
+    outline: 2px solid #007acc !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 10px rgba(0, 122, 204, 0.5) !important;
+    transition: all 0.3s ease !important;
+    animation: zen-pulse 2s ease-in-out infinite !important;
+}
+
+@keyframes zen-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 10px rgba(0, 122, 204, 0.5) !important; 
+    }
+    50% { 
+        box-shadow: 0 0 20px rgba(0, 122, 204, 0.8) !important; 
+    }
+}
+
+.zen-revealed {
+    position: relative !important;
+    animation: zen-reveal 0.5s ease-out !important;
+}
+
+@keyframes zen-reveal {
+    from {
+        opacity: 0 !important;
+        transform: translateY(-10px) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
+
+.zen-reveal-indicator {
+    position: absolute !important;
+    top: -30px !important;
+    right: 0 !important;
+    background: linear-gradient(135deg, #007acc, #0056b3) !important;
+    color: white !important;
+    padding: 4px 10px !important;
+    border-radius: 12px !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    z-index: 10000 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    animation: zen-indicator-slide 0.3s ease-out !important;
+}
+
+@keyframes zen-indicator-slide {
+    from {
+        opacity: 0 !important;
+        transform: translateY(-10px) scale(0.8) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+    }
+}
+
+.zen-reveal-indicator::before {
+    content: "✨" !important;
+    margin-right: 4px !important;
+    font-size: 10px !important;
+}

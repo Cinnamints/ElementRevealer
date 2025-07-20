@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Element Revealer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="zen-popup">
+    <div class="zen-container">
+        <header class="zen-header">
+            <div class="zen-logo">
+                <div class="zen-logo-icon">🔍</div>
+                <h1>Zen Element Revealer</h1>
+            </div>
+            <div class="zen-version">v3.0</div>
+        </header>
+
+        <main class="zen-main">
+            <div class="zen-status" id="statusContainer">
+                <div class="zen-status-icon">⏳</div>
+                <div class="zen-status-text">Click scan to discover hidden elements</div>
+            </div>
+
+            <div class="zen-actions">
+                <button class="zen-btn zen-btn-primary" id="quickScanBtn">
+                    <span class="zen-btn-icon">🔍</span>
+                    Quick Scan
+                </button>
+                
+                <button class="zen-btn zen-btn-secondary" id="popOutBtn">
+                    <span class="zen-btn-icon">🪟</span>
+                    Pop Out Window
+                </button>
+            </div>
+
+            <div class="zen-results" id="resultsContainer" style="display: none;">
+                <div class="zen-summary" id="summaryContainer">
+                    <!-- Summary will be populated by JS -->
+                </div>
+                
+                <div class="zen-quick-actions">
+                    <button class="zen-btn zen-btn-success" id="revealAllBtn">
+                        <span class="zen-btn-icon">✨</span>
+                        Reveal All
+                    </button>
+                    
+                    <button class="zen-btn zen-btn-warning" id="restoreAllBtn">
+                        <span class="zen-btn-icon">🔄</span>
+                        Restore All
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="zen-footer">
+            <div class="zen-footer-text">Professional web transparency tool</div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

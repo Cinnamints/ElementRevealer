@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Zen Element Revealer",
+  "version": "3.0.0",
+  "description": "Discover and reveal hidden interactive elements on web pages with professional transparency.",
+  
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Zen Element Revealer"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["window.html", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
